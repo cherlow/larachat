@@ -8,7 +8,7 @@ clone the project from git hub
 ```
 git clone https://github.com/cherlow/larachat.git
 ```
-Then navigate to to the directory
+Then navigate to the directory
 
 ```
 cd larachat
@@ -31,7 +31,7 @@ Run the migrations
 ```
 php artisan migrate
 ```
-Run laravel development serve and laravel websoket server
+Run laravel development server and laravel websocket server
 ```
 php artisan serve
 ```
@@ -41,7 +41,7 @@ php artisan websocket:serve
 
 Create two user account and test the functionalities
 
-## Getting Started
+## For Development
 For development make sure to run 
 ```
 npm run watch
