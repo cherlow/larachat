@@ -1,87 +1,51 @@
 # Project Title
 
-One Paragraph of project description goes here
+A Laravel real time chat app using vue and laravel websockets
 
 ## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
+clone the project from git hub
 
 ```
-Give examples
+git clone https://github.com/cherlow/larachat.git
 ```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+Then navigate to to the directory
 
 ```
-Give the example
+cd larachat
 ```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+Run composer install and npm 
 
 ```
-Give an example
+composer install
+```
+```
+npm install
+```
+Edit the env file and set your database credentials
+```
+DB_DATABASE=YOUR_DB_NAME
+DB_USERNAME=YOUR_DB_USERNAME
+DB_PASSWORD=YOUR_DB_PASSWORD
+```
+Run the migrations
+```
+php artisan migrate
+```
+Run laravel development serve and laravel websoket server
+```
+php artisan serve
+```
+```
+php artisan websocket:serve
 ```
 
-### And coding style tests
+Create two user account and test the functionalities
 
-Explain what these tests test and why
-
+## Getting Started
+For development make sure to run 
 ```
-Give an example
+npm run watch
 ```
 
-## Deployment
 
-Add additional notes about how to deploy this on a live system
 
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
