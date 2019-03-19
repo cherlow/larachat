@@ -18,6 +18,8 @@ class CreateChatsTable extends Migration
             $table->integer('sender_id');
             $table->integer('messengarable_id');
             $table->text('latest_message');
+            $table->text('sender_name');
+            $table->text('messengarable_name');
             $table->timestamps();
         });
     }
