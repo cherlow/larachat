@@ -3,6 +3,15 @@
 A Laravel real time chat app using vue and laravel websockets
 
 ## Getting Started
+Have composer and node installed
+```
+https://getcomposer.org/download/
+```
+```
+https://nodejs.org/en/download/
+```
+
+
 clone the project from git hub
 
 ```
